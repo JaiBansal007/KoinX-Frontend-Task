@@ -2,11 +2,11 @@ import InfoIcon from '@mui/icons-material/Info';
 export default function Performance() {
 
     return (
-        <div className="bg-white h-auto w-full flex flex-col gap-4 p-8 rounded-lg" >
+        <div className="bg-white h-auto w-full flex flex-col gap-4 p-4 md:p-8 rounded-lg" >
             <h1 className="text-2xl font-bold">Performance</h1>
             <div className='flex flex-col gap-8 p-4'>
             <div className="h-auto">
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center gap-4 md:gap-0'>
                     <span className='flex flex-col text-sm'>
                          Today 
                          <span className='text-gray-600'>$45,689.22</span>
@@ -19,7 +19,7 @@ export default function Performance() {
                 </div>
             </div>
             <div className="h-auto">
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center gap-4 md:gap-0'>
                     <span className='flex flex-col text-sm'>
                          Today 
                          <span className='text-gray-600'>$45,689.22</span>
@@ -34,7 +34,7 @@ export default function Performance() {
             </div>
             <div className=' h-auto'>
                 <h1 className='text-lg font-bold'>Fundamentals <InfoIcon className='text-gray-500'/></h1>
-                <div className='flex'>
+                <div className='flex flex-col lg:flex-row'>
                     
                     <div className=" p-4 w-full h-auto">
                         <table className="w-full">

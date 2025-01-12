@@ -22,19 +22,19 @@ export default function AboutBitCoin() {
             </div>
             <div className='flex flex-col gap-4 mb-2'>
                 <h2 className='text-2xl font-bold'>Already Holding Crpto?</h2>
-                    <div className='flex gap-6'>
-                        <div className='bg-gradient-to-br from-[#76EDA4] to-[#0E5CAD] flex p-4 rounded-lg gap-3 justify-around w-1/2 overflow-x-scroll'>
+                    <div className='flex flex-col lg:flex-row gap-6'>
+                        <div className='bg-gradient-to-br from-[#76EDA4] to-[#0E5CAD] flex p-4 rounded-lg gap-3 justify-around lg:w-1/2 overflow-x-scroll'>
                             <img src="images/img1.png" alt=""  className='rounded-lg overflow-hidden'/>
                             <div className='flex flex-col gap-6 items-center mt-4 w-2/3 flex-wrap'>
                                 <h1 className='text-white text-xl font-bold' >Calculate Your Profile</h1>
-                                <button className='bg-white text-lg rounded-lg w-2/3 font-semibold p-1'>check Now <ArrowForwardIcon/></button>
+                                <button className='bg-white text-lg rounded-lg lg:w-2/3 font-semibold p-2 lg:p-1'>check Now <ArrowForwardIcon/></button>
                             </div>
                         </div>
-                        <div className='bg-gradient-to-br from-[#FF9865] to-[#EF3031] flex p-4 rounded-lg gap-3 w-1/2 justify-around'>
+                        <div className='bg-gradient-to-br from-[#FF9865] to-[#EF3031] flex p-4 rounded-lg gap-3 lg:w-1/2 justify-around'>
                             <img src="images/img2.png" alt=""  className='rounded-lg overflow-hidden'/>
                             <div className='flex flex-col gap-6 items-center mt-4 w-2/3 flex-wrap'>
                                 <h1 className='text-white text-xl font-bold' >Calculate Your tax liablity</h1>
-                                <button className='bg-white text-lg rounded-lg w-2/3 font-semibold p-1'>check Now <ArrowForwardIcon/></button>
+                                <button className='bg-white text-lg rounded-lg lg:w-2/3 font-semibold p-2 lg:p-1'>check Now <ArrowForwardIcon/></button>
                             </div>
                         </div>
                     </div>

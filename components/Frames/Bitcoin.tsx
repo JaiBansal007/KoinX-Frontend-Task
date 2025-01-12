@@ -6,21 +6,23 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 export default function Bitcoin() {
     const [data, setdata] = useState<any>([]);
+    const [loading,setloading] = useState<boolean>(true);
     useEffect(() => {
         const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true&precision=7';
         const options = {
         method: 'GET',
-        headers: {accept: 'application/json', 'x-cg-api-key': 'CG-T5MXWEvokDg45NthikLazcam'}
+        headers: {accept: 'application/json', 'x-cg-api-key':process.env.NEXT_APP_KEY},
         };
 
         axios.get(url, options)
         .then(res => {
             setdata(res.data.bitcoin);
-            console.log(res.data.bitcoin);
+            setloading(false);
+            // console.log(res.data.bitcoin);
         }).catch(err => console.error(err));
     }, []);
     return (
-        <div className="bg-[white] w-auto h-auto p-8 rounded-lg flex flex-col gap-4">
+        <div className="bg-[white] w-auto h-auto p-5  md:p-8 rounded-lg flex flex-col gap-4">
             <div className="flex flex-col justify-between items-start gap-6">
                 <h1 className="flex gap-3 items-center">
                     <img src="images/Bitcoin.png" alt="" />
@@ -54,7 +56,7 @@ export default function Bitcoin() {
                 </div>
             </div>
             <hr className="bg-gray-400 h-[1px]"/>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
                 <span className="text-lg font-bold">Bitcoin Price Chart(USD)</span>
                 <div className="flex gap-3 text-xs text-gray-500">
                     <button className="rounded-full bg-blue-200 px-2 font-bold text-blue-600">1H</button>

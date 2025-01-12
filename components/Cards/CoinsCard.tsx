@@ -2,7 +2,7 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 export default function CoinsCard(props:any) {
     return (
-        <div className=" border border-gray-200 p-4 rounded-lg flex flex-col gap-2 w-auto">
+        <div className=" border border-gray-200 p-4 rounded-lg flex flex-col gap-2 w-full md:w-auto">
            <div className="flex gap-2 items-center">
             <img src={props.data.small} alt="" className="rounded-full"/>
             <div className='flex gap-2 p-3 items-center'>

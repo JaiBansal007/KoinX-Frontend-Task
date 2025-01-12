@@ -1,12 +1,12 @@
 export default function Tokennomics() {
 
     return (
-        <div className="bg-[white] w-full h-[60vh] rounded-lg flex flex-col justify-around p-8">
+        <div className="bg-[white] w-full h-auto rounded-lg flex flex-col justify-around p-8">
             <h1 className="text-2xl font-bold">Tokenomics</h1>
            <div className="flex gap-8 flex-col">
             <h1 className="text-lg font-bold">Initial development</h1>
            <div className="flex gap-4">
-           <div className="relative w-32 h-32 rounded-full bg-gray-200 ">
+           <div className="relative w-32 h-32 rounded-full bg-gray-200 mb-4">
                 <div className="absolute w-32 h-32 rounded-full border-8  border-t-blue-500 border-r-blue-500 border-l-yellow-500 border-b-blue-500"></div>
                 <div className="absolute inset-2 bg-white rounded-full border-blue-500"></div>
             </div>

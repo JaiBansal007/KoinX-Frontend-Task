@@ -13,7 +13,7 @@ export default function Footer() {
         const options = {
             headers: {
                 accept: 'application/json',
-                'x-cg-pro-api-key': 'CG-T5MXWEvokDg45NthikLazcam',
+                'x-cg-pro-api-key': process.env.NEXT_APP_KEY,
             },
         };
 

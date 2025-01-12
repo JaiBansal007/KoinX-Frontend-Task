@@ -11,8 +11,8 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 export default function Home() {
   return (
     <>
-    <div className="bg-[#EFF2F5] min-h-100vh w-[100vw] flex px-16 py-10 gap-4">
-      <div className="w-[70%] flex justify-center flex-col h-full gap-5">
+    <div className="bg-[#EFF2F5] min-h-100vh w-[100vw] flex flex-col lg:flex-row px-4 md:px-16 py-10 gap-4 overflow-hidden">
+      <div className="lg:w-[70%] flex justify-center flex-col h-full gap-5">
         <span className="flex flex-col gap-2">
           <span className="text-gray-400 text-sm">
             <span>CryptoCurrencies</span>
@@ -22,7 +22,7 @@ export default function Home() {
           <Bitcoin />
         </span>
         <span className="flex flex-col gap-3">
-          <div className="text-gray-500 font-semibold gap-2 border-b border-gray-300 py-2 px-4 flex justify-between">
+          <div className="text-gray-500 font-semibold gap-4 lg:gap-2 border-b border-gray-300 py-2 px-4 flex justify-between overflow-scroll">
             <span className="text-blue-500 border-b font-extrabold">Overview</span>
             <span>Fundamentals</span>
             <span>New Sights</span>
@@ -38,7 +38,7 @@ export default function Home() {
         <Tokennomics />
         <Team />
       </div>
-      <div className="w-[30%] flex justify-center flex-col h-full  gap-4 mt-8">
+      <div className="lg:w-[30%] flex justify-center flex-col h-full  gap-4 mt-8">
         <PromotionCard />
         <TrendingCoinCard />
       </div>
