@@ -4,10 +4,34 @@ export default function Performance() {
     return (
         <div className="bg-white h-auto w-full flex flex-col gap-4 p-8 rounded-lg" >
             <h1 className="text-2xl font-bold">Performance</h1>
-            <div className="h-[20vh]">
-                
+            <div className='flex flex-col gap-8 p-4'>
+            <div className="h-auto">
+                <div className='flex justify-between items-center'>
+                    <span className='flex flex-col text-sm'>
+                         Today 
+                         <span className='text-gray-600'>$45,689.22</span>
+                    </span>
+                    <span className="w-3/4 h-2 rounded-lg bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 block"></span>
+                    <span className='flex flex-col text-sm'>
+                         Today 
+                         <span className='text-gray-600'>$45,689.22</span>
+                    </span>
+                </div>
             </div>
-
+            <div className="h-auto">
+                <div className='flex justify-between items-center'>
+                    <span className='flex flex-col text-sm'>
+                         Today 
+                         <span className='text-gray-600'>$45,689.22</span>
+                    </span>
+                    <span className="w-3/4 h-2 rounded-lg bg-gradient-to-r from-red-500 via-orange-500 via-yellow-500 via-green-500 via-blue-500 via-indigo-500 to-purple-500 block"></span>
+                    <span className='flex flex-col text-sm'>
+                         Today 
+                         <span className='text-gray-600'>$45,689.22</span>
+                    </span>
+                </div>
+            </div>
+            </div>
             <div className=' h-auto'>
                 <h1 className='text-lg font-bold'>Fundamentals <InfoIcon className='text-gray-500'/></h1>
                 <div className='flex'>

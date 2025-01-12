@@ -2,6 +2,7 @@
 import { useEffect,useState } from "react";
 import CoinsCard from "../Cards/CoinsCard";
 import axios from "axios";
+import Loading from "../Loading";
 
 export default function Footer() {
     const [loading, setloading] = useState<boolean>(true);
@@ -24,9 +25,12 @@ export default function Footer() {
             })
             .catch((err) => {
                 console.error(err);
-                setloading(false);
+                
             });
     }, []);
+    if(loading){
+     return <Loading />;
+    }
     return (
         <div className="bg-white h-auto w-[100vw] flex flex-col gap-4 p-8" >
             <h1 className="text-2xl font-bold">You May Also Like</h1>
